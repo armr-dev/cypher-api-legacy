@@ -1,0 +1,3 @@
+[submodule "blowfish-go"]
+	path = blowfish-go
+	url = git@github.com:armr-dev/blowfish-go.git
