@@ -1,7 +1,16 @@
-import { initLogger, logError, logInfo, logDebug } from "./utils/Logger.js";
+import http from "http";
+import { initLogger, logInfo } from "./utils/Logger.js";
+
+const port = 8000;
 
 initLogger(2);
 
-logError('ErrorTest');
-logInfo('InfoTest');
-logDebug('DebugTest');
+const requestListener = (req, res) => {
+  res.writeHead(200);
+  res.end("Hello World");
+};
+
+const server = http.createServer(requestListener);
+server.listen(port);
+
+logInfo(`The server is listening on port ${port}`);
