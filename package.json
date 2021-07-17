@@ -2,11 +2,14 @@
   "name": "cypher-api",
   "version": "1.0.0",
   "description": "An API for serving various encrypt/decrypt algorithms",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "repository": "git@github.com:armr-dev/cypher-api.git",
   "author": "armr-dev <andrermr.dev@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
   "devDependencies": {
     "eslint": "^7.30.0",
     "eslint-config-airbnb-base": "^14.2.1",

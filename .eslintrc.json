@@ -22,11 +22,10 @@
         ]
     },
     "settings": {
+        "import/extensions": 0,
         "import/resolver": {
-            "typescript": {},
             "node": {
-                "extensions": [".js", ".jsx", ".ts", ".tsx"
-                ],
+                "extensions": [".js", ".jsx"],
                 "moduleDirectory": ["node_modules", "src/"]
             }
         }
